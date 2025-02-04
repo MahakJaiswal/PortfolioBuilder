@@ -1,0 +1,137 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+.features-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding-top: 60px;
+  background: white; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-out;
+}
+.features-container h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(92, 87, 87);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s;
+  color: #333;
+}
+.feature:nth-child(odd) {
+  background: linear-gradient(to right, rgba(248, 243, 243, 0.966), rgba(22, 143, 133, 0.966));
+}
+
+.feature:nth-child(even) {
+  background: linear-gradient(to right, rgba(139, 175, 175, 0.966), rgba(248, 243, 243, 0.966));
+}
+.feature h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.feature p {
+  font-size: 16px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+.feature ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.feature ul li {
+  font-size: 16px;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.feature ul li:hover {
+  color: #28a745;
+  cursor: pointer;
+}
+
+/* Feature Icons */
+.feature i {
+  font-size: 30px;
+  color: #ffdb58;
+  margin-right: 15px;
+}
+
+/* Feature Image */
+.feature-image {
+  flex: 1;
+  max-width: 600px;
+  min-width: 500px;
+  max-height: 500px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  padding: 30px;
+}
+
+.feature-image:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .features-container {
+    padding: 20px;
+  }
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .feature-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .feature-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.feature-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.feature-content h3 {
+  font-size: 1.2rem;
+}
+
+.feature-content p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.feature-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.feature-paragraph {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
