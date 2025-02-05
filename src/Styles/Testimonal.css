@@ -1,61 +1,143 @@
 .page-container {
-    background: linear-gradient(to bottom, #387478, #629584, #E2F1E7);
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+  background: linear-gradient(to bottom, #387478, #629584, #E2F1E7);
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-height: 100vh; */
+  max-height: 600px;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Testimonial Container - Fixed Height and Width */
+.testimonial-container {
+  background: linear-gradient(to bottom, rgb(231, 233, 232), white);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: center;
+  width: 80%;
+  max-width: 420px;
+  height: auto; 
+  max-height: 400px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+/* Quote Text */
+.quote {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: black;
+  line-height: 1.5;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+/* User Image */
+.user-image {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* User Details */
+.user-details {
+  text-align: center;
+  color: black;
+}
+
+/* User Name */
+.user-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* User Title */
+.user-title {
+  font-size: 1rem;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .carousel .slide {
+    width: 100% !important;
   }
-  
   .title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-align: center;
+      font-size: 2rem;
   }
-  
+
   .testimonial-container {
-    background: linear-gradient(to bottom, rgb(231, 233, 232), white);
-    padding: 30px;
-    border-radius: 10px;
-    margin: 20px;
-    text-align: center;
-    width: 80%;
-    max-width: 800px;
-    min-height: 430px;
+      width: 85%;
+      min-height: 350px;
+      padding: 25px;
   }
-  
+
   .quote {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: black;
+      font-size: 1rem;
   }
-  
-  .user-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-  }
-  
+
   .user-image {
-    height: 120px;
-    margin-bottom: 10px;
-    object-fit: cover;
+      height: 110px;
+      width: 110px;
   }
-  
-  .user-details {
-    text-align: center;
-    color: black;
-  }
-  
+
   .user-name {
-    font-weight: bold;
-    color: black;
+      font-size: 1.1rem;
   }
-  
+
   .user-title {
-    font-size: 0.9rem;
-    color: black;
+      font-size: 0.9rem;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .title {
+      font-size: 1.7rem;
+      margin-bottom: 30px;
+  }
+
+  .testimonial-container {
+      width: 95%;
+      min-height: 320px;
+      padding: 20px;
+  }
+
+  .quote {
+      font-size: 0.95rem;
+  }
+
+  .user-image {
+      height: 100px;
+      width: 100px;
+  }
+
+  .user-name {
+      font-size: 1rem;
+  }
+
+  .user-title {
+      font-size: 0.85rem;
+  }
+  .carousel .slide {
+    width: 100% !important; /* Show 2 slides at a time */
+  }
+}

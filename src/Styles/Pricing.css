@@ -1,5 +1,5 @@
 .container {
-    padding: 50px;
+    padding: 30px;
 }
 
 .title, .subtitle {
@@ -8,12 +8,13 @@
 
 .title {
     font-size: 2.5rem;
+    margin:0 ;
 }
 
 .subtitle {
     font-size: 1.2rem;
     color: #555;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .plans {
@@ -77,7 +78,7 @@
     color: #fff;
     border: none;
     cursor: pointer;
-    left: 590px;   
+    left: 650px;   
     font-size: large; 
 }
 
@@ -102,4 +103,77 @@
     border-radius: inherit;
     background: linear-gradient(82.3deg, rgb(3, 44, 30) 10.8%, rgb(46, 223, 199) 94.3%);
     transition: all 0.475s;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .container {
+        padding: 30px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin: 1;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        padding:  2;
+
+    }
+
+    .plan {
+        width: 45%; /* Smaller width for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .plan {
+        width: 90%; /* Stack plans vertically for small screens */
+        margin-bottom: 15px;
+    }
+
+    .buttonSOF {
+        width: 100%; /* Make button full-width */
+        left: 0;
+        padding: 0 1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .plans {
+        margin: 10px;
+    }
+
+    .plan {
+        width: 100%; /* Full width on very small screens */
+        margin-bottom: 10px;
+    }
+
+    .buttonSOF {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
 }
